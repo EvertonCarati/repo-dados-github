@@ -28,7 +28,7 @@ jobs:
 
       - name: Exibindo o output da action de password
         run: echo "${{ steps.generatedpassword.outputs.password }}"
-    exibindo_valores:
+  exibindo_valores:
       needs: [gerando_output]
       runs-on: ubuntu-latest
       steps:
