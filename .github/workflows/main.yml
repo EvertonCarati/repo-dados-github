@@ -32,7 +32,7 @@ jobs:
         - name: Exibindo o contexto de input completo
           run: echo "${{ toJson(inputs)}}"
         - name: Exibindo os valores passados nos inputs
-          run:
+          run: |
               echo "Esses são os valores passados nos inputs"
               echo "A Versão é ${{ inputs.versão }}"
               echo "O card é ${{ inputs.numero_card }}"
